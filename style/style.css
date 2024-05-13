@@ -56,12 +56,15 @@ body {
 }
 
 .titulo1 {
-    grid-column: 2/4;
-    grid-row: 2;
-    justify-content: center;
-    align-content: center;
-
+    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+    grid-row: 2; /* Se mantiene en la segunda fila */
+    justify-self: center !important;
+    align-self: center !important;
 }
+
+
+
+
 
 h1,
 h2 {
@@ -85,7 +88,7 @@ h2 {
 }
 
 .fisher-island-experiences {
-    background-color: #000;
+    background-color:#212121;
     color: white;
     row-gap: 20px;
     column-gap: 20px;
@@ -134,7 +137,22 @@ h5,
 h6 {
     font-weight: bolder;
     text-align: center;
+    margin: 10px 0; /* Ajusta los márgenes verticalmente */
+    padding: 0; /* Elimina cualquier padding predeterminado */
 }
+
+/* Ajusta los márgenes y padding para pantallas pequeñas */
+@media (max-width: 576px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 5px 0; /* Márgenes más pequeños para pantallas pequeñas */
+    }
+}
+
 
 .item {
     text-align: center;
@@ -200,4 +218,12 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+/* Estilos de Contact us */
+
+.contact-us-data {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
 }

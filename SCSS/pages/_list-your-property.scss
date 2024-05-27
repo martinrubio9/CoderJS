@@ -1,0 +1,70 @@
+.titulo1-listyourproperty {
+
+    padding-top: 15px;
+
+}
+
+
+.three-keys-section {
+    background-color: #f3f1ef;
+    padding: 40px 0;
+}
+
+.fisher-island-experiences {
+    background-color: #000;
+    color: white;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+// Estilos para el formulario
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    margin: 30px; 
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    max-width: 800px; /* Ancho máximo del formulario */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; 
+    padding-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+  }
+  
+  textarea {
+    grid-column: span 2; /* Ocupa dos columnas */
+  }
+  
+  .form-group.text-center {
+    grid-column: span 2; /* Ocupa dos columnas */
+    text-align: center;
+  }
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <h1>Fisher Island Rentals</h1>
+
+    <h2>Our exclusive listings</h2>
+
+      
+      <div>
+        <label for="bedrooms-input">Enter number of bedrooms:</label>
+        <input type="number" id="bedrooms-input" min="1">
+        <button id="bedrooms-search-button">Search by Bedrooms</button>
+    </div>
+
+    
+    <div>
+        <label for="view-select">Select View:</label>
+        <select id="view-select">
+            <option value="">-- Select View --</option>
+            <option value="Bay View">Bay View</option>
+            <option value="Ocean View">Ocean View</option>
+        </select>
+        <button id="view-search-button">Search by View</button>
+    </div>
+
+    
+    <div id="property-1" class="card">
+        <h2>Bay View</h2>
+        <p>One of a kind ground floor masterpiece, corner unit, completely renovated. Designed by a well-known Brazilian architect. Approximately 5,000 Sq.Ft. Featuring 6 bedrooms, 6.5 bathrooms, 2 powder rooms, state-of-the-art kitchen and bathrooms, window treatments, and floor-to-ceiling sliding impact glass doors. Large terrace overlooking the Fisher Island Marina.</p>
+        <button class="rent-button">I want to rent this property</button>
+    </div>
+
+    <div id="property-2" class="card">
+        <h2>Ocean View</h2>
+        <p>Welcome to the 5-star Palazzo del Sol on the prestigious Fisher Island. Your private elevator opens up to this flow-through 3 bed, 3.5 bath unit boasting 3,793 sq. ft., 2 private terraces totaling 767 sq. ft. overlooking the Atlantic Ocean & South Point skyline. Upgrades include engineered oak flooring throughout, custom wallpaper, and wood & stone-accented walls.</p>
+        <button class="rent-button">I want to rent this property</button>
+    </div>
+
+    <div id="confirmation-message" style="color: green;">
+        One of our travel advisors will contact you to execute this lease. Thank you!
+    </div>
+    
+    <div id="no-results-message" style="color: red;">
+        We do not have availability at the moment.
+    </div>
+    
+    
+
+    
+</body>
+</html>
